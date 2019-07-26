@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const PlaceSchema = mongoose.Schema;
 
 export const PlaceSchema = new Schema({
@@ -14,3 +15,4 @@ export const PlaceSchema = new Schema({
         type: Number
     }  
 });
+module.exports = mongoose.model('Place', PlaceSchema);

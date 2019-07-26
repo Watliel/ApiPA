@@ -12,3 +12,4 @@ export const PlayerSchema = new Schema({
         type: Number            
     }
 });
+module.exports = mongoose.model('Joueur', PlayerSchema);

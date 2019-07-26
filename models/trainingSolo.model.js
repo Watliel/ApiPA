@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const TrainingSoloSchema = mongoose.Schema;
 
 export const TrainingSoloSchema = new Schema({
@@ -11,6 +12,5 @@ export const TrainingSoloSchema = new Schema({
         idPlace:{
         type: Number
     }
-
-   
 });
+module.exports = mongoose.model('TrainingSolo', TrainingSoloSchema);

@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const TrainingSchema = mongoose.Schema;
 
 export const TrainingSchema = new Schema({
@@ -20,3 +21,4 @@ export const TrainingSchema = new Schema({
 
    
 });
+module.exports = mongoose.model('Training', TrainingSchema);

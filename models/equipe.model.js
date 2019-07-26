@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const TeamSchema = mongoose.Schema;
 
 export const TeamSchema = new Schema({
@@ -15,3 +16,4 @@ export const TeamSchema = new Schema({
     }
    
 });
+module.exports = mongoose.model('Team', TeamSchema);

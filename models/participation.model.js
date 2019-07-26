@@ -1,9 +1,9 @@
+const mongoose = require('mongoose');
 const ParticipationtSchema = mongoose.Schema;
 
 export const ParticipationtSchema = new Schema({
     idMatch: {
         type: Number,
-        //required: 'Enter a first name'
     },
   	idJoueur: {
         type: Number
@@ -12,3 +12,4 @@ export const ParticipationtSchema = new Schema({
         type: Number
     }  
 });
+module.exports = mongoose.model('Participation', ParticiopationSchema);

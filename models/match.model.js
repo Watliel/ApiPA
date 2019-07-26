@@ -1,5 +1,4 @@
-//   /lib/models/crmModel.tsimport * as mongoose from 'mongoose';
-
+const mongoose = require('mongoose');
 const MatchSchema = mongoose.Schema;
 
 export const MatchSchema = new Schema({
@@ -25,3 +24,4 @@ export const MatchSchema = new Schema({
 
    
 });
+module.exports = mongoose.model('match', MatchSchema);

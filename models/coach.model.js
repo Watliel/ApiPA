@@ -1,5 +1,4 @@
-//   /lib/models/crmModel.tsimport * as mongoose from 'mongoose';
-
+const mongoose = require('mongoose');
 const CoachSchema = mongoose.Schema;
 
 export const CoachSchema = new Schema({
@@ -14,3 +13,5 @@ export const CoachSchema = new Schema({
     }
    
 });
+
+module.exports = mongoose.model('Coach', CoachSchema);

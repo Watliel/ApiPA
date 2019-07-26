@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const SportSchema = mongoose.Schema;
 
 export const SportSchema = new Schema({
@@ -9,3 +10,4 @@ export const SportSchema = new Schema({
     }
  
 });
+module.exports = mongoose.model('Sport', SportSchema);

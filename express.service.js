@@ -1,6 +1,7 @@
 const express = require('express');
 const apiRouter = require('./routes/club.route');
 
+
 const bodyParser  = require('body-parser');
 const cors = require('cors');
 
@@ -11,6 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/api', apiRouter);
+
 
 exports.start = (port) => {
     app.listen(port, (err) => {

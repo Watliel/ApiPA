@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const ObservateurSchema = mongoose.Schema;
 
 export const ObservateurSchema = new Schema({
@@ -13,5 +14,5 @@ export const ObservateurSchema = new Schema({
     idSport: {
         type: Number
     }
-   
 });
+module.exports = mongoose.model('observateur', ObservateurSchema);

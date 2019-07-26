@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const StatistiqueSchema = mongoose.Schema;
 
 export const StatistiqueSchema = new Schema({
@@ -23,3 +24,4 @@ export const StatistiqueSchema = new Schema({
         type: Number            
     }
 });
+module.exports = mongoose.model('Statistique', StatistiqueSchema);
