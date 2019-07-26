@@ -2,7 +2,7 @@ let router = require('express').Router();
 const trainingSoloController = require('../controllers/trainingSolo.controller');
 // Set default API response
 
-router.post('/newClub', trainingSoloController.addNewTraining);
+router.post('/newTrainingSolo', trainingSoloController.addNewTraining);
 router.get('/getTrainingSolo', trainingSoloController.getTrainingSolos)
 router.get('/getTrainingSoloWithId', trainingSoloController.getTrainingSoloWithID)
 router.put('/updateTrainingSolo', trainingSoloController.updateTrainingSolo)
