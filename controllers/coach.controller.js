@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const ClubSchema = require('../models/coach.model');
+const CoachSchema = require('../models/coach.model');
 
 exports.addNewCoach = (req, res) => {                
-    let newCoach = new ClubSchema({
+    let newCoach = new CoachSchema({
         nomCoach: req.body.nomCoach,
         idClub: req.body.idClub,
         ville: req.body.ville
@@ -18,16 +18,16 @@ exports.addNewCoach = (req, res) => {
 
 
 exports.getCoachs = (req, res) => {           
-    club.find({}, (err, coach) => {
-        if(err){
-            res.send(err);
-        }
+    try {
+        const coach = await CoachSchema.find();
         res.json(coach);
-    });
+    } catch {
+        res.send(err);
+    }
 }
 
 exports.getCoachWithID = (req, res) => {           
-    club.findById(req.params.clubId, (err, coach) => {
+    club.findById(req.params.coachId, (err, coach) => {
         if(err){
             res.send(err);
         }

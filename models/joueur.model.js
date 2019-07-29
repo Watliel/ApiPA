@@ -1,4 +1,4 @@
-
+const mongoose = require('mongoose');
 const PlayerSchema = mongoose.Schema;
 
 export const PlayerSchema = new Schema({

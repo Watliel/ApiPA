@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 const CoachSchema = mongoose.Schema;
 
-export const CoachSchema = new Schema({
+ const CoachSchema = new Schema({
     idClub: {
         type: Number,
     },
-  	nom: {
+  	nomCoach: {
         type: String
     },
-        ville: {
+    ville: {
         type: String
     }
    
