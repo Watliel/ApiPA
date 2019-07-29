@@ -4,7 +4,7 @@ const clubController = require('../controllers/club.controller');
 
 router.post('/newClub', clubController.addNewClub);
 router.get('/getClubs', clubController.getClubs)
-router.get('/getClubWithId/:idClub', clubController.getClubWithID)
+router.get('/getClubWithId/:clubId', clubController.getClubWithID)
 router.put('/updateClub', clubController.updateClub)
 router.delete('/deleteClub', clubController.deleteClub)
 
